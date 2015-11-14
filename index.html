@@ -40,9 +40,34 @@
 			</div>
 		</nav>
 	</header>
-	<section class="contenido">
-		<article class="especificaciones">
-			
+	<section class="contenido" ng-controller="SpecificationsController as specCtrl">
+		<h2 class="titleProduct" ng-bind="titleSpec"></h2>
+		<article class="especificaciones">			
+			<figure class="img-principal">
+				<img src="{{mainImage}}" width="400px">
+			</figure>
+			<div class="details" width="100px">
+				<h4>ESPECIFICACIONES</h4>			
+				<ul>
+					<li ng-repeat="details in specifications" ng-bind="details.title"></li>		
+				</ul>
+			</div>			
+		</article>
+		<article class="details-images">
+			<figure class="img-secundarias" ng-repeat="image in images">
+				<img src="{{image.url}}" width="180px">			
+			</figure>
+		</article>
+		<article class="package-included" ng-controller="PackageIncludeController as packageCtrl">
+			<h3>Package Include</h3>
+			<ul>
+				<li ng-repeat="detail in details" ng-bind="detail.title"></li>
+			</ul>			
+		</article>
+		<article class="mensajecomprar">
+			<div>
+				Para adquirir el producto solo debe dar click en <span>Comprar</span>
+			</div>			
 		</article>
 	</section>
 	<script type="text/javascript" src="js/app.js"></script>
