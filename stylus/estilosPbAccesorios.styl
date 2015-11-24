@@ -37,8 +37,21 @@ header
 .menu
   background black
   border-bottom 2px solid dorado
+  
+  display -webkit-flex
+  display -ms-flexbox
+  display -webkit-box
   display flex
+  
+  -webkit-flex-direction row
+  -ms-flex-direction row
+  -webkit-box-orient horizontal
+  -webkit-box-direction normal
   flex-direction row
+  
+  -webkit-justify-content space-around
+  -ms-flex-pack distribute
+  -webkit-box-pack distribute
   justify-content space-around
   .logo   
     flex 1 1 40px
@@ -48,12 +61,33 @@ header
   .options
     flex 7 2 100px    
     .menu-items
+      display -webkit-flex
+      display -ms-flexbox
+      display -webkit-box
       display flex
+      
+      -webkit-flex-direction row
+      -ms-flex-direction row
+      -webkit-box-orient horizontal
+      -webkit-box-direction normal
       flex-direction row
-      justify-content space-around    
+        
+      -webkit-justify-content space-around
+      -ms-flex-pack distribute
+      -webkit-box-pack distribute
+      justify-content space-around
+          
       .item
+        -webkit-align-items center
+        -ms-flex-align center
+        -webkit-box-align center
         align-items center
-        display flex        
+        
+        display -webkit-flex
+        display -ms-flexbox
+        display -webkit-box
+        display flex
+                
         list-style none
         a
           border-right 1px solid white
@@ -62,10 +96,30 @@ header
           padding-right 3em
           text-decoration none
   .registro
+    -webkit-align-items center
+    -ms-flex-align center
+    -webkit-box-align center
     align-items center
+    
+    display -webkit-flex
+    display -ms-flexbox
+    display -webkit-box
     display flex
+    
+    -webkit-flex 5 3 100px
+    -ms-flex 5 3 100px
+    -webkit-box-flex 5 3 100px
     flex 5 3 100px
+    
+    -webkit-flex-direction row
+    -ms-flex-direction row
+    -webkit-box-orient horizontal
+    -webkit-box-direction normal
     flex-direction row
+    
+    -webkit-justify-content space-around
+    -ms-flex-pack distribute
+    -webkit-box-pack distribute
     justify-content space-around
     .search-left    
         .search-input
@@ -104,7 +158,16 @@ header
     margin-top 3em
   .especificaciones
     margin-top 1em
+    
+    display -webkit-flex
+    display -ms-flexbox
+    display -webkit-box
     display flex
+    
+    -webkit-flex-direction row
+    -ms-flex-direction row
+    -webkit-box-orient horizontal
+    -webkit-box-direction normal
     flex-direction row
     .details
       margin-left 4em
@@ -118,9 +181,22 @@ header
         li
           padding-bottom 1em
   .details-images
+    display -webkit-flex
+    display -ms-flexbox
+    display -webkit-box
     display flex
+    
+    -webkit-flex-direction row
+    -ms-flex-direction row
+    -webkit-box-orient horizontal
+    -webkit-box-direction normal
     flex-direction row
+    
+    -webkit-justify-content space-around
+    -ms-flex-pack distribute
+    -webkit-box-pack distribute
     justify-content space-around
+    
     margin-top 2em
     .img-secundarias
       border 1px solid lightgray
@@ -128,9 +204,22 @@ header
     margin-left 1em
   .mensajecomprar
     margin-top 3em
+    
+    display -webkit-flex
+    display -ms-flexbox
+    display -webkit-box
     display flex
+    
+    -webkit-align-items center
+    -ms-flex-align center
+    -webkit-box-align center
     align-items center
+    
+    -webkit-justify-content center
+    -ms-flex-pack center
+    -webkit-box-pack center
     justify-content center
+    
     span
       border-radius 5px
       padding .3em 1em
