@@ -30,26 +30,28 @@
 	}]);
 
 	app.controller('SpecificationsController', ['$scope', function ($scope) {
-		$scope.titleSpec = 'Sombrero de bruja para niños Halloween'
-		$scope.mainImage = 'image/hat4.jpg'
+		$scope.titleSpec = 'Soporte Para Teléfono Celular para Carro'
+		$scope.mainImage = 'image/support.jpg'
 		$scope.specifications = [
-			{title: 'Material: Tela de raso'},
-			{title: 'Color: Azul, Rojo, Negro, Amarillo, Naranja, Rosa'},
-			{title: 'Tamaño: D37cm*D18cm*H35cm/14.57*7.09*13.78inch'},
-			{title: 'Colorido puntiagudo sombrero de bruja con estrellas de oro'},
-			{title: 'Una talla para la mayoría de los niños'},
-			{title: 'Es conveniente para el partido, demostración, máscara del partido / traje'},
-			{title: 'Son coloridos y son muy adecuados para los niños'}
+			{title: 'Material: Plastico'},
+			{title: 'Color: Azul, Negro'},
+			{title: 'Abrir y cerrar libremente, de fácil instalación'},
+			{title: 'Colocado en la salida del coche, propicio al calor, conveniente para operar'},
+			{title: 'No va a bloquear la vista, el cumplimiento de las normas de tráfico'},
+			{title: 'Fácil desmontaje e instalación en la salida del coche de aire acondicionado'},
+			{title: 'Se puede girar 360 grados, fácil de ajustar a cualquier ángulo de visión'},
+			{title: 'Anchura de apoyo móvil entre 5-8 cm.'}
 		];
 		$scope.images = [
-			{url: 'image/hat1.jpg'},
-			{url: 'image/hat2.jpg'},
-			{url: 'image/hat3.jpg'}
+			{url: 'image/support2.jpg'},
+			{url: 'image/support3.jpg'},
+			{url: 'image/support4.jpg'},
+			{url: 'image/support5.jpg'}
 		];
 	}]);
 	app.controller('PackageIncludeController', ['$scope', function ($scope) {
 		$scope.details = [
-			{title: '1x Kids Wizard Hat'}
+			{title: 'Soporte para teléfono 1 x mini salida de aire de salida'}
 		];
 	}]);
 })();
